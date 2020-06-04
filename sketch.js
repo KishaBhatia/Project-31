@@ -40,7 +40,7 @@ function setup() {
 
   if(frameCount%90===0){
     for(var k=0;k<particles.length;k++){
-      particles.push(new Particle(random(width/2-10,width/2+10,20,20)));
+      particles.push(new Particle(random(width/2-10,width/2+10,20)));
     }
   };
 }
