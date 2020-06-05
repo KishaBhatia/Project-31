@@ -23,7 +23,7 @@ function setup() {
 };
 
   for(var j=15;j<=width;j=j+60){
-    plinkos.push(new Plinko(j,80,10,10));
+    plinkos.push(new Plinko(j,70,10,10));
   };
 
   for(var j=10;j<=width;j=j+50){
