@@ -18,7 +18,7 @@ function setup() {
  // createSprite(400, 200, 50, 50);
  ground = new Ground(240,height-10,480,20);
 
-  for(var i=0;i<=width;i=i+80){
+ for(var i=0;i<=width;i=i+80){
   divisions.push(new Division(i,height-divisionHeight/2,10,divisionHeight));
 };
 
@@ -39,7 +39,6 @@ function setup() {
   };
 
 }
-
 
 function draw() {
   background(0);  
