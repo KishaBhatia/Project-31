@@ -22,27 +22,22 @@ function setup() {
   divisions.push(new Division(i,height-divisionHeight/2,10,divisionHeight));
 };
 
-  for(var j=15;j<=width;j=j+40){
-    plinkos.push(new Plinko(j,35,20,20));
+  for(var j=15;j<=width;j=j+50){
+    plinkos.push(new Plinko(j,70,10,10));
   };
 
-  for(var j=10;j<=width-10;j=j+30){
-    plinkos.push(new Plinko(j,75,20,20));
+  for(var j=10;j<=width;j=j+40){
+    plinkos.push(new Plinko(j,110,10,10));
   };
 
-  for(var j=15;j<=width;j=j+40){
-    plinkos.push(new Plinko(j,115,20,20));
+  for(var j=15;j<=width;j=j+50){
+    plinkos.push(new Plinko(j,150,10,10));
   };
 
-  for(var j=10;j<=width;j=j+30){
-    plinkos.push(new Plinko(j,155,20,20));
+  for(var j=10;j<=width;j=j+40){
+    plinkos.push(new Plinko(j,190,10,10));
   };
 
-  if(frameCount%90===0){
-    for(var k=0;k<particles.length;k++){
-      particles.push(new Particle(random(width/2-10,width/2+10,20)));
-    }
-  };
 }
 
 function draw() {
@@ -59,21 +54,13 @@ function draw() {
     plinkos[j].display();
    }
 
-   for(var j=0; j<plinkos.length;j++){ 
-    plinkos[j].display();
-   }
-
-   for(var j=0; j<plinkos.length;j++){ 
-    plinkos[j].display();
-   }
-
-  for(var j=0; j<plinkos.length;j++){ 
-    plinkos[j].display();
-   }
-
    for(var k=0;k<particles.length;k++){
     particles[k].display();
   }
+
+  if(frameCount%90===0){
+      particles.push(new Particle(random(width/2-10,width/2),10,10));
+  };
 
   ground.display();
 }
