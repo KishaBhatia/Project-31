@@ -27,15 +27,15 @@ function setup() {
   };
 
   for(var j=10;j<=width;j=j+50){
-    plinkos.push(new Plinko(j,150,10,10));
+    plinkos.push(new Plinko(j,130,10,10));
   };
 
   for(var j=15;j<=width;j=j+60){
-    plinkos.push(new Plinko(j,210,10,10));
+    plinkos.push(new Plinko(j,190,10,10));
   };
 
   for(var j=10;j<=width;j=j+50){
-    plinkos.push(new Plinko(j,270,10,10));
+    plinkos.push(new Plinko(j,250,10,10));
   };
 
 }
