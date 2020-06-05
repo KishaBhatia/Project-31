@@ -18,7 +18,8 @@ class Plinko {
       strokeWeight(3);
       stroke("maroon");
       fill("white");
-      ellipse(pos.x,pos.y, this.radius);
+      ellipseMode(RADIUS);
+      ellipse(0,0,this.radius,this.radius);
       pop();
     }
   };
